@@ -10,11 +10,11 @@ const nextConfig = {
     return [
       {
         source: "/flow",
-        destination: "http://localhost:5173/flow/",
+        destination: "https://test-project-phi-neon.vercel.app",
       },
       {
         source: "/flow/:path*",
-        destination: "http://localhost:5173/flow/:path*",
+        destination: "https://test-project-phi-neon.vercel.app/:path*",
       },
     ];
   },
