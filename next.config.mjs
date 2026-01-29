@@ -6,6 +6,18 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-}
+  async rewrites() {
+    return [
+      {
+        source: "/flow",
+        destination: "http://localhost:5173/flow/",
+      },
+      {
+        source: "/flow/:path*",
+        destination: "http://localhost:5173/flow/:path*",
+      },
+    ];
+  },
+};
 
-export default nextConfig
+export default nextConfig;
